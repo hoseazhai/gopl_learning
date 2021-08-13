@@ -1,0 +1,44 @@
+Server:
+  RunMode: debug
+  HttpPort: 8001
+  ReadTimeout: 60
+  WriteTimeout: 60
+App:
+  DefaultPageSize: 10
+  MaxPageSize: 100
+  DefaultContextTimeout: 60
+  LogSavePath: storage/logs
+  LogFileName: app
+  LogFileExt: .log
+  UploadSavePath: storage/uploads
+  UploadServerUrl: http://127.0.0.1:8000/static
+  UploadImageMaxSize: 5  # MB
+  UploadImageAllowExts:
+      - .jpg
+      - .jpeg
+      - .png
+Database:
+  DBtype: mysql
+  UserName: root
+  Password: bt5
+  Host: 192.168.20.19:3306
+  DBName: blog_service
+  TablePrefix: blog_
+  Charset: utf8
+  ParseTime: true
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+JWT:
+  Secret: hoseazhai
+  Issuer: blog-service
+  Expire: 7200
+
+EMail:
+  Host: smtp.263.net
+  Port: 465
+  UserName: suanbanyun@china-hbp.com
+  Password: JEvirus81231.
+  IsSSL: true
+  From: suanbanyun@china-hbp.com
+  TO:
+    - hoseazhai@163.com

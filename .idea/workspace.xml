@@ -1,23 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df029617-bdd9-49b7-a5ea-cbf13d3c96e2" name="Default Changelist" comment="" />
+    <list default="true" id="df029617-bdd9-49b7-a5ea-cbf13d3c96e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blog-service/configs/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/global/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/global/setting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/global/tracer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/dao/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/dao/article_tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/dao/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/dao/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/access_log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/app_info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/context_timeout.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/limmiter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/recovery.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/tracer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/middleware/translattions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/model/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/model/article_tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/model/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/model/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/routers/api/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/routers/api/upload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/routers/api/v1/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/routers/api/v1/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/routers/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/service/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/service/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/service/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/service/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/internal/service/upload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/app/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/app/form.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/app/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/app/pagination.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/convert/convert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/emial/email.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/errcode/common_code.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/errcode/errcode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/errcode/moduel_code.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/limiter/limiter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/limiter/method_limiter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/logger/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/setting/section.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/setting/setting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/tracer/tracer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/upload/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-service/pkg/util/md5.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch1/fetch/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch4/exercise4.14/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch4/exercise4.14/issue/issue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch4/exercise4.14/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch4/issueshtml/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/exercise5.1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/exercise5.10/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/exercise5.15/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/exercise5.2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/exercise5.3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/exercise5.5/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/findlinks1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/outline/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/toposort/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch5/trace/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch7/exercise7.4/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch7/exercise7.4/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch7/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientset-test/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consul_server/consul_client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consul_server/consul_server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consul_server/consul_server2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaite/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-cmd/database/mysql/database.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-cmd/database/mysql/imp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/pkg/bapi/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/pkg/errcode/common_error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/pkg/errcode/errcode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/pkg/errcode/rpc_error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/proto/common.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/proto/tag.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag_service/server/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour/cmd/time.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour/cmd/word.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour/internal/timer/time.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour/internal/word/word.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tour/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gopl_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gopl_learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch4/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch4/issuesreport/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch4/issuesreport/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch4/issuesreport/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch4/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch4/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/four/four_map/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/four/four_map/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/four/four_map/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/four/four_map/main.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Go Application" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1d2dlLTMmHhda0vPZX7BjG4bl7h" />
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tag_service" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -31,6 +155,57 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Go Build.tag_service">
+    <configuration name="go build four_map" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopl_learning" />
+      <working_directory value="$PROJECT_DIR$/four/four_map" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/four/four_map/main.go" />
+      <package value="four_map" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/hoseazhai/gopl_learning/ch7/exercise7.4" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopl_learning" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/ch7/exercise7.4/main.go" />
+      <package value="github.com/hoseazhai/gopl_learning/ch7/exercise7.4" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopl_learning" />
+      <working_directory value="$PROJECT_DIR$/four/four_map" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/four/four_map/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tag_service" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="gopl_learning" />
+      <working_directory value="$PROJECT_DIR$/tag_service" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="github.com/hoseazhai/gopl_learning" />
+      <directory value="$PROJECT_DIR$/tag_service" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.tag_service" />
+      <item itemvalue="Go Build.go build four_map" />
+      <item itemvalue="Go Build.go build github.com/hoseazhai/gopl_learning/ch7/exercise7.4" />
+      <item itemvalue="Go Build.go build main.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/hoseazhai/gopl_learning/ch7/exercise7.4" />
+        <item itemvalue="Go Build.go build four_map" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -39,10 +214,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://goproxy.cn,direct</proxy>
   </component>
 </project>
