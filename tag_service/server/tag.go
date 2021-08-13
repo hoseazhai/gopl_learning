@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/hoseazhai/gopl_learning/tag_service/pkg/bapi"
+	"github.com/hoseazhai/gopl_learning/tag_service/pkg/errcode"
 	pb "github.com/hoseazhai/gopl_learning/tag_service/proto"
 )
 
@@ -18,7 +19,7 @@ func (t *TagServer) GetTagList(ctx context.Context, r *pb.GetTagListRequest) (*p
 	api := bapi.NewAPI("http://127.0.0.1:8001")
 	body, err := api.GetTagList(ctx, r.GetName())
 	if err != nil {
-		return nil, err
+		return nil, errcode.TogRPCError(errcode.ERROR_GET_TAG_LIST_FALL)
 	}
 	tagList := pb.GetTagListReply{}
 	err = json.Unmarshal(body, &tagList)

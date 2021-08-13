@@ -1,12 +1,13 @@
 package errcode
 
 import (
+	pb "github.com/hoseazhai/gopl_learning/tag_service/proto"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )
 
 func TogRPCError(err *Error) error {
-	s := status.New(ToRPCCode(err.Code()), err.Msg())
+	s, _ := status.New(ToRPCCode(err.Code()), err.Msg()).WithDetails(&pb.Error{Code: int32(err.Code()), Message: err.Msg()})
 	return s.Err()
 }
 
@@ -34,4 +35,18 @@ func ToRPCCode(code int) codes.Code {
 	}
 
 	return statusCode
+}
+
+type Status struct {
+	*status.Status
+}
+
+func FromError(err error) *Status {
+	s, _ := status.FromError(err)
+	return &Status{s}
+}
+
+func ToRPCStatus(code int, msg string) *Status {
+	s, _ := status.New(ToRPCCode(code), msg).WithDetails(&pb.Error{Code: int32(code), Message: msg})
+	return &Status{s}
 }
